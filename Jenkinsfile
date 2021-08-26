@@ -21,6 +21,12 @@ pipeline {
                
         }
 
+        post{
+            always{
+                echo "Print if build is success or not!"
+            }
+        }
+
         // stage('Example') {
         //     steps{
         //         input {
