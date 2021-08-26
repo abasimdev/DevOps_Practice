@@ -14,6 +14,7 @@ pipeline {
             steps {
                 input {
                     message 'Do you want to continue ?'
+                    ok 'Do it!'
                 }
             }   
         }
