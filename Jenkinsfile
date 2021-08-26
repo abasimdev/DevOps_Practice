@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('Build number') {
             steps {
-                echo 'Hello World!'
+                echo "Hello World! This is build no. ${build_number}"
             }
         }
     }
