@@ -13,7 +13,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 input {
-                    message 'Do you want to continue ?'
+                    message "Do you want to continue ?"
                     ok 'Do it!'
                 }
             }   
