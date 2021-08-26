@@ -9,6 +9,13 @@ pipeline {
             steps {
                 sh "echo 'This is build no. ${build_number} for project: ${project_name}'"
             }
+        stage('Deploy'){
+            steps{
+                input{
+                    message "Do you want to continue ?"
+                }
+            }
+        }    
         }
     }
 }
