@@ -5,9 +5,9 @@ pipeline {
     }
 
     stages {
-        stage('Build number') {
+        stage('Build') {
             steps {
-                echo "Hello World! This is build no. ${build_number} for project: ${project_name}"
+                sh "This is build no. ${build_number} for project: ${project_name}"
             }
         }
     }
