@@ -22,7 +22,7 @@ pipeline {
         }
 
         stage('Parallel jobs') {
-            Parallel {
+            parallel {
                 stage ("Processor:AMD") {
                     steps {
                         echo "Parallel Processor 'AMD' "
