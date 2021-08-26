@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh echo "This is build no. ${build_number} for project: ${project_name}"
+                sh "echo "This is build no. ${build_number} for project: ${project_name}""
             }
         }
     }
