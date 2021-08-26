@@ -13,7 +13,7 @@ pipeline {
         stage('Deploy') {
                 input {
                     message "Do you want to continue ?"
-                    ok 'Do it!'
+                    // ok 'Do it!'
                 }
                 steps{
                     echo "Checking Input."
