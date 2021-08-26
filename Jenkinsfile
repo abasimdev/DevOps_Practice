@@ -21,6 +21,22 @@ pipeline {
                
         }
 
+        stage('Parallel jobs') {
+            Parallel {
+                stage ("Processor:AMD") {
+                    steps {
+                        echo "Parallel Processor 'AMD' "
+                    }
+                }
+
+                stage ("Processor:Intel") {
+                    steps {
+                        echo "Parallel Processor 'Intel' "
+                    }
+                }
+            }
+        }
+
     }
      post{
             always{
